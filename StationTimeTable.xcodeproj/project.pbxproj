@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AF889EDF7119257AA9C42E4 /* Pods_StationTimeTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DCBA6F8279A21743ED3C1B /* Pods_StationTimeTable.framework */; };
 		B9B9DC4A208A555F002C0BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9DC49208A555F002C0BF4 /* AppDelegate.swift */; };
 		B9B9DC4C208A555F002C0BF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9DC4B208A555F002C0BF4 /* ViewController.swift */; };
 		B9B9DC4F208A555F002C0BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B9DC4D208A555F002C0BF4 /* Main.storyboard */; };
 		B9B9DC51208A5560002C0BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B9DC50208A5560002C0BF4 /* Assets.xcassets */; };
 		B9B9DC54208A5560002C0BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B9DC52208A5560002C0BF4 /* LaunchScreen.storyboard */; };
-		B9B9DC5F208A5560002C0BF4 /* StationTimeTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9DC5E208A5560002C0BF4 /* StationTimeTableTests.swift */; };
+		B9B9DC6A208A5600002C0BF4 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9DC69208A5600002C0BF4 /* Provider.swift */; };
+		B9B9DC6C208A5641002C0BF4 /* FbError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9DC6B208A5641002C0BF4 /* FbError.swift */; };
+		B9B9DC6E208A5672002C0BF4 /* FbErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9DC6D208A5672002C0BF4 /* FbErrorTests.swift */; };
+		B9B9DC71208A56D1002C0BF4 /* StationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9DC70208A56D1002C0BF4 /* StationProvider.swift */; };
+		DE82E3B0B9FBC78A98A6E2CA /* Pods_StationTimeTableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A6706AD018A87A4B3E29CB /* Pods_StationTimeTableTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13A8ECE9B171A2242E0FAF39 /* Pods-StationTimeTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationTimeTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StationTimeTable/Pods-StationTimeTable.debug.xcconfig"; sourceTree = "<group>"; };
+		366AEFEC066DD752D4547A99 /* Pods-StationTimeTableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationTimeTableTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StationTimeTableTests/Pods-StationTimeTableTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F3415BFDD09E02594672889 /* Pods-StationTimeTableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationTimeTableTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StationTimeTableTests/Pods-StationTimeTableTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B848961B1352D21897D691D /* Pods-StationTimeTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationTimeTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-StationTimeTable/Pods-StationTimeTable.release.xcconfig"; sourceTree = "<group>"; };
 		B9B9DC46208A555F002C0BF4 /* StationTimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StationTimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B9DC49208A555F002C0BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9B9DC4B208A555F002C0BF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +43,13 @@
 		B9B9DC53208A5560002C0BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9B9DC55208A5560002C0BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9B9DC5A208A5560002C0BF4 /* StationTimeTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StationTimeTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9B9DC5E208A5560002C0BF4 /* StationTimeTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimeTableTests.swift; sourceTree = "<group>"; };
 		B9B9DC60208A5560002C0BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B9DC69208A5600002C0BF4 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		B9B9DC6B208A5641002C0BF4 /* FbError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbError.swift; sourceTree = "<group>"; };
+		B9B9DC6D208A5672002C0BF4 /* FbErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbErrorTests.swift; sourceTree = "<group>"; };
+		B9B9DC70208A56D1002C0BF4 /* StationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationProvider.swift; sourceTree = "<group>"; };
+		F0A6706AD018A87A4B3E29CB /* Pods_StationTimeTableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StationTimeTableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DCBA6F8279A21743ED3C1B /* Pods_StationTimeTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StationTimeTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF889EDF7119257AA9C42E4 /* Pods_StationTimeTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE82E3B0B9FBC78A98A6E2CA /* Pods_StationTimeTableTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +78,8 @@
 				B9B9DC48208A555F002C0BF4 /* StationTimeTable */,
 				B9B9DC5D208A5560002C0BF4 /* StationTimeTableTests */,
 				B9B9DC47208A555F002C0BF4 /* Products */,
+				F9EA3C511A3E2A85024D8ABB /* Pods */,
+				D818BFA6607739FF4FF8B773 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +97,8 @@
 			children = (
 				B9B9DC49208A555F002C0BF4 /* AppDelegate.swift */,
 				B9B9DC4B208A555F002C0BF4 /* ViewController.swift */,
+				B9B9DC6F208A56AC002C0BF4 /* Providers */,
+				B9B9DC6B208A5641002C0BF4 /* FbError.swift */,
 				B9B9DC4D208A555F002C0BF4 /* Main.storyboard */,
 				B9B9DC50208A5560002C0BF4 /* Assets.xcassets */,
 				B9B9DC52208A5560002C0BF4 /* LaunchScreen.storyboard */,
@@ -90,10 +110,39 @@
 		B9B9DC5D208A5560002C0BF4 /* StationTimeTableTests */ = {
 			isa = PBXGroup;
 			children = (
-				B9B9DC5E208A5560002C0BF4 /* StationTimeTableTests.swift */,
+				B9B9DC6D208A5672002C0BF4 /* FbErrorTests.swift */,
 				B9B9DC60208A5560002C0BF4 /* Info.plist */,
 			);
 			path = StationTimeTableTests;
+			sourceTree = "<group>";
+		};
+		B9B9DC6F208A56AC002C0BF4 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				B9B9DC69208A5600002C0BF4 /* Provider.swift */,
+				B9B9DC70208A56D1002C0BF4 /* StationProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		D818BFA6607739FF4FF8B773 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7DCBA6F8279A21743ED3C1B /* Pods_StationTimeTable.framework */,
+				F0A6706AD018A87A4B3E29CB /* Pods_StationTimeTableTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9EA3C511A3E2A85024D8ABB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13A8ECE9B171A2242E0FAF39 /* Pods-StationTimeTable.debug.xcconfig */,
+				9B848961B1352D21897D691D /* Pods-StationTimeTable.release.xcconfig */,
+				3F3415BFDD09E02594672889 /* Pods-StationTimeTableTests.debug.xcconfig */,
+				366AEFEC066DD752D4547A99 /* Pods-StationTimeTableTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9B9DC63208A5560002C0BF4 /* Build configuration list for PBXNativeTarget "StationTimeTable" */;
 			buildPhases = (
+				73D8E377F7D0867953D994A3 /* [CP] Check Pods Manifest.lock */,
 				B9B9DC42208A555F002C0BF4 /* Sources */,
 				B9B9DC43208A555F002C0BF4 /* Frameworks */,
 				B9B9DC44208A555F002C0BF4 /* Resources */,
+				3BD9EA1C92E2A755C625DE66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9B9DC66208A5560002C0BF4 /* Build configuration list for PBXNativeTarget "StationTimeTableTests" */;
 			buildPhases = (
+				762C385E49BE804358454ECD /* [CP] Check Pods Manifest.lock */,
 				B9B9DC56208A5560002C0BF4 /* Sources */,
 				B9B9DC57208A5560002C0BF4 /* Frameworks */,
 				B9B9DC58208A5560002C0BF4 /* Resources */,
@@ -192,13 +244,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BD9EA1C92E2A755C625DE66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StationTimeTable/Pods-StationTimeTable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StationTimeTable/Pods-StationTimeTable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73D8E377F7D0867953D994A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StationTimeTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		762C385E49BE804358454ECD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StationTimeTableTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9B9DC42208A555F002C0BF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B9DC71208A56D1002C0BF4 /* StationProvider.swift in Sources */,
 				B9B9DC4C208A555F002C0BF4 /* ViewController.swift in Sources */,
 				B9B9DC4A208A555F002C0BF4 /* AppDelegate.swift in Sources */,
+				B9B9DC6C208A5641002C0BF4 /* FbError.swift in Sources */,
+				B9B9DC6A208A5600002C0BF4 /* Provider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9B9DC5F208A5560002C0BF4 /* StationTimeTableTests.swift in Sources */,
+				B9B9DC6E208A5672002C0BF4 /* FbErrorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -345,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -356,10 +468,12 @@
 		};
 		B9B9DC64208A5560002C0BF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A8ECE9B171A2242E0FAF39 /* Pods-StationTimeTable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StationTimeTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,10 +487,12 @@
 		};
 		B9B9DC65208A5560002C0BF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B848961B1352D21897D691D /* Pods-StationTimeTable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StationTimeTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,6 +506,7 @@
 		};
 		B9B9DC67208A5560002C0BF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3415BFDD09E02594672889 /* Pods-StationTimeTableTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +527,7 @@
 		};
 		B9B9DC68208A5560002C0BF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366AEFEC066DD752D4547A99 /* Pods-StationTimeTableTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -23,4 +23,20 @@ class Utils {
         return data
     }
     
+    static func toHour(from timeInterval: TimeInterval, timezone: String) -> String {
+        let date = Date(timeIntervalSince1970: timeInterval)
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone(abbreviation: timezone)
+        dateFormatter.dateFormat = "h:mm"
+        return dateFormatter.string(from: date)
+    }
+    
+    static func toDateString(from timeInterval: TimeInterval, timezone: String) -> String {
+        let date = Date(timeIntervalSince1970: timeInterval)
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone(abbreviation: timezone)
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        return dateFormatter.string(from: date)
+    }
+    
 }

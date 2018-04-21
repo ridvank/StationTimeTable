@@ -36,7 +36,11 @@ struct DefaultAddress: Mappable {
     var coordinates: Coordinate
 }
 
-struct Coordinate: Mappable {
+struct Coordinate: Mappable, Equatable {
     var latitude: Float
     var longitude: Float
+    
+    public static func == (lhs: Coordinate, rhs: Coordinate) -> Bool {
+        return lhs.latitude == rhs.latitude && lhs.longitude == rhs.longitude
+    }
 }

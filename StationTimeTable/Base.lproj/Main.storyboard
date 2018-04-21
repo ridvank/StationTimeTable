@@ -1,24 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3MQ-oG-HPF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="wpb-AM-0Qd">
+            <objects>
+                <navigationController id="3MQ-oG-HPF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OjA-Mh-ZKE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9U2-on-FXM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0E-7O-Dhx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-673" y="32"/>
+        </scene>
+        <!--Station View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StationViewController" id="BYZ-38-t0r" customClass="StationViewController" customModule="StationTimeTable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4u0-gD-eRY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationTableViewCell" rowHeight="90" id="gJ3-4r-RaT" customClass="StationTableViewCell" customModule="StationTimeTable" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gJ3-4r-RaT" id="tqO-BD-e9W">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6q-wH-0oD">
+                                                    <rect key="frame" x="15" y="11" width="50" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="t6I-HG-GU1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynl-fO-cBS">
+                                                    <rect key="frame" x="77" y="11" width="283" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkN-Qv-cyO">
+                                                    <rect key="frame" x="77" y="34" width="42" height="51"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ynl-fO-cBS" secondAttribute="trailing" constant="15" id="3MY-LZ-LsP"/>
+                                                <constraint firstItem="b6q-wH-0oD" firstAttribute="leading" secondItem="tqO-BD-e9W" secondAttribute="leading" constant="15" id="99K-VB-SqK"/>
+                                                <constraint firstItem="ynl-fO-cBS" firstAttribute="leading" secondItem="b6q-wH-0oD" secondAttribute="trailing" constant="12" id="Aro-ec-oxq"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SkN-Qv-cyO" secondAttribute="trailing" id="DPj-Ne-4MP"/>
+                                                <constraint firstItem="b6q-wH-0oD" firstAttribute="top" secondItem="tqO-BD-e9W" secondAttribute="top" constant="11" id="IOI-X0-DVU"/>
+                                                <constraint firstItem="ynl-fO-cBS" firstAttribute="top" secondItem="tqO-BD-e9W" secondAttribute="top" constant="11" id="KLU-Uf-WVk"/>
+                                                <constraint firstItem="SkN-Qv-cyO" firstAttribute="top" secondItem="ynl-fO-cBS" secondAttribute="bottom" constant="2.5" id="TPy-zc-52z"/>
+                                                <constraint firstAttribute="bottom" secondItem="SkN-Qv-cyO" secondAttribute="bottom" constant="5" id="ayr-EL-N2R"/>
+                                                <constraint firstItem="SkN-Qv-cyO" firstAttribute="leading" secondItem="tqO-BD-e9W" secondAttribute="leading" constant="77" id="uLo-P8-uPu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hourLabel" destination="b6q-wH-0oD" id="Qya-x4-paf"/>
+                                            <outlet property="lineInfoLabel" destination="ynl-fO-cBS" id="sWV-1J-hW2"/>
+                                            <outlet property="routeLabel" destination="SkN-Qv-cyO" id="rmG-4d-dLy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Q7x-qp-FFg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jKz-k8-S3v"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4u0-gD-eRY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8OA-Bh-9Kg"/>
+                            <constraint firstItem="4u0-gD-eRY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EvD-iJ-GuW"/>
+                            <constraint firstItem="4u0-gD-eRY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eoF-F6-5Y9"/>
+                            <constraint firstItem="4u0-gD-eRY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tub-JQ-03C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="flG-An-Iaz">
+                        <barButtonItem key="rightBarButtonItem" title="Toggle" id="cub-v7-q8w">
+                            <connections>
+                                <action selector="toggleButtonPressed:" destination="BYZ-38-t0r" id="o5k-gu-RHd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="stationTableView" destination="4u0-gD-eRY" id="OYO-0X-bjE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>

@@ -6,7 +6,13 @@
 //  Copyright © 2018 Ridvan Kuccuk. All rights reserved.
 //
 
-struct Arrival: Mappable {
+protocol Showable {
+    var through_the_stations: String { get set }
+    var datetime: DateTime { get set }
+    var line_direction: String { get set }
+}
+
+struct Arrival: Mappable, Showable {
     var through_the_stations: String
     var datetime: DateTime
     var line_direction: String

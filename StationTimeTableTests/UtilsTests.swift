@@ -35,4 +35,16 @@ class UtilsTests: XCTestCase {
         }
     }
     
+    func testToHour() {
+        let dateTime = DateTime(timestamp: 1524292800, tz: "GMT+03:00")
+        let result = Utils.toHour(from: dateTime.timestamp, timezone: dateTime.tz)
+        XCTAssertEqual(result, "9:40")
+    }
+    
+    func testToDateString() {
+        let dateTime = DateTime(timestamp: 1524292800, tz: "GMT+03:00")
+        let result = Utils.toDateString(from: dateTime.timestamp, timezone: dateTime.tz)
+        XCTAssertEqual(result, "21/04/2018")
+    }
+    
 }

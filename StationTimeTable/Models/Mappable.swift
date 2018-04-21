@@ -22,11 +22,13 @@ extension Mappable {
         }
     }
     func serialize() throws -> Parameters? {
+        var parameters: Parameters?
         do {
             let jsonString = try String(data: JSONEncoder().encode(self), encoding: .utf8)
-            return try jsonString?.toDictionary()
+            parameters = try jsonString?.toDictionary()
         } catch let error {
             throw error
         }
+        return parameters
     }
 }

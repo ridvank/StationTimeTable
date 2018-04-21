@@ -6,8 +6,7 @@
 //  Copyright © 2018 Ridvan Kuccuk. All rights reserved.
 //
 
-
-struct Departure: Mappable {
+struct Departure: Mappable, Showable {
     var through_the_stations: String
     var datetime: DateTime
     var line_direction: String
